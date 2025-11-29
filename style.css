@@ -1,0 +1,198 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Increased for better desktop readability */
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #1e1e1e;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    min-height: 60vh; /* Adjusted from 100vh for better balance on desktops */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Increased for prominence */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.4rem; /* Slightly larger for readability */
+    margin-bottom: 30px;
+}
+
+/* BOTÕES SOCIAIS */
+.social-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background: #fff;
+    color: #000;
+    padding: 15px 30px; /* Larger for better clickability */
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #e3e3e3;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px; /* Slightly wider for desktops */
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem; /* Larger for emphasis */
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider cards */
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    padding: 30px; /* More padding for breathing room */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p, .card ul {
+    font-size: 1.1rem;
+}
+
+/* FORM */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Wider for desktops */
+    margin: auto;
+    gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    background: #1e1e1e;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #ccc;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
