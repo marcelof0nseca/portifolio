@@ -14,6 +14,7 @@
             <a href="sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
         </nav>
+        <button id="darkModeBtn" style="margin-left:20px;padding:10px 18px;border-radius:6px;border:none;background:#222;color:#fff;font-weight:bold;cursor:pointer;">Modo Escuro</button>
     </header>
 
     <section class="hero">
@@ -50,6 +51,10 @@
 
     <footer>
         <p>© 2025 Marcelo - Portfólio</p>
+        <script>
+        document.getElementById('darkModeBtn').onclick = function() {
+            document.body.classList.toggle('dark-mode');
+        };
+        </script>
+        <script src="script.js"></script>
     </footer>
-</body>
-</html>

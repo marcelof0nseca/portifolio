@@ -1,4 +1,33 @@
-/* RESET */
+.dark-mode {
+    background: #181818;
+    color: #e3e3e3;
+}
+
+.dark-mode header {
+    background: #111;
+    color: #fff;
+}
+
+.dark-mode .card {
+    background: #222;
+    color: #e3e3e3;
+}
+
+.dark-mode .btn {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode .btn:hover {
+    background: #555;
+}
+
+.dark-mode footer {
+    background: #222;
+    color: #bbb;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +42,12 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Increased for better desktop readability */
+    font-size: 18px; 
     background: #f5f5f5;
     color: #333;
     line-height: 1.6;
 }
 
-/* HEADER */
 header {
     background: #1e1e1e;
     padding: 20px;
@@ -47,29 +75,28 @@ nav a:hover {
     opacity: 0.7;
 }
 
-/* HERO */
 .hero {
     padding: 80px 20px;
     text-align: center;
     background: #222;
     color: #fff;
-    min-height: 60vh; /* Adjusted from 100vh for better balance on desktops */
+    min-height: 60vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .hero h1 {
-    font-size: 4rem; /* Increased for prominence */
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.4rem; /* Slightly larger for readability */
+    font-size: 1.4rem; 
     margin-bottom: 30px;
 }
 
-/* BOTÕES SOCIAIS */
+
 .social-buttons {
     margin-top: 20px;
 }
@@ -77,7 +104,7 @@ nav a:hover {
 .btn {
     background: #fff;
     color: #000;
-    padding: 15px 30px; /* Larger for better clickability */
+    padding: 15px 30px; 
     border-radius: 8px;
     margin: 5px;
     display: inline-block;
@@ -91,9 +118,8 @@ nav a:hover {
     background: #e3e3e3;
 }
 
-/* CONTAINER */
 .container {
-    max-width: 1200px; /* Slightly wider for desktops */
+    max-width: 1200px;
     margin: auto;
     padding: 60px 20px;
 }
@@ -101,20 +127,18 @@ nav a:hover {
 .section-title {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 2.5rem; /* Larger for emphasis */
+    font-size: 2.5rem; 
 }
 
-/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider cards */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 25px;
 }
 
-/* CARD */
 .card {
     background: #fff;
-    padding: 30px; /* More padding for breathing room */
+    padding: 30px; 
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -135,11 +159,10 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
-/* FORM */
 .contato-form {
     display: flex;
     flex-direction: column;
-    max-width: 600px; /* Wider for desktops */
+    max-width: 600px; 
     margin: auto;
     gap: 15px;
 }
@@ -167,17 +190,21 @@ button:hover {
     background: #333;
 }
 
-/* FOOTER */
 footer {
     background: #111;
     color: #ccc;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 100px;
     font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+
 }
 
-/* RESPONSIVIDADE MOBILE */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -197,7 +224,6 @@ footer {
     }
 }
 
-/* ----- CONTATO ----- */
 
 .contato-section {
     text-align: center;
