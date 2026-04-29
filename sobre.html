@@ -3,25 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre - Marcelo</title>
+    <meta name="description" content="Sobre Marcelo Andrade da Fonseca, desenvolvedor fullstack focado em produtos digitais, sistemas web e jogos." />
+    <title>Sobre | Marcelo Andrade da Fonseca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h2 class="logo">Marcelo Fonseca</h2>
-        <nav>
-            <a href="index.html">Início</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Voltar ao início">
+            <span class="brand-mark">MF</span>
+            <span>Marcelo Andrade da Fonseca</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="index.html#projetos">Projetos</a>
+            <a href="index.html#stack">Stack</a>
             <a href="sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <section class="container">
-        <h1 class="section-title">Sobre Mim</h1>
-        <p>Sou estudante de Ciência da Computação e tenho grande interesse em desenvolvimento Web e Inteligência Artificial.</p>
-        <p>Gosto de aprender fazendo, criando projetos reais e evoluindo minhas habilidades constantemente.</p>
-    <footer>
-        <p>© 2025 Marcelo - Portfólio</p>
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Sobre mim</p>
+            <h1>Sou desenvolvedor fullstack e gosto de transformar ideias em sistemas usáveis.</h1>
+        </section>
+
+        <section class="content-panel">
+            <p>
+                Estudo Ciência da Computação e construo projetos que misturam interface, lógica, produto e experiência.
+                Meu foco é desenvolver sistemas completos, com front-end bem apresentado, regras claras e estrutura
+                preparada para evoluir.
+            </p>
+            <p>
+                No meu portfólio existem projetos de gestão de treinos, site institucional de academia, plataforma
+                SaaS para segurança privada, sistema de acompanhamento para fertilidade e um jogo em C com Raylib
+                inspirado em Crossy Road.
+            </p>
+            <p>
+                Gosto de pensar como desenvolvedor e como usuário ao mesmo tempo: o sistema precisa funcionar, mas
+                também precisa guiar, informar, prevenir erros e passar confiança desde a primeira tela.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 Marcelo Andrade da Fonseca</span>
+        <div>
+            <a href="index.html">Início</a>
+            <a href="contato.html">Contato</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-# 🌐 Portfólio Web – Marcelo Andrade Fonseca
+# 🌐 Portfólio Web – Marcelo Andrade da Fonseca
 
 Meu portfólio pessoal desenvolvido com **HTML, CSS e JavaScript**, apresentando meus projetos, inspirações, interesses profissionais e formas de contato.
 

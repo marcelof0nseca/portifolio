@@ -3,58 +3,247 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Marcelo</title>
+    <meta name="description" content="Portfólio de Marcelo Andrade da Fonseca, desenvolvedor fullstack com projetos em web, SaaS, jogos em C e produtos digitais." />
+    <title>Marcelo Andrade da Fonseca | Desenvolvedor Fullstack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h2 class="logo">Marcelo Fonseca</h2>
-        <nav>
-            <a href="index.html">Início</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Voltar ao início">
+            <span class="brand-mark">MF</span>
+            <span>Marcelo Andrade da Fonseca</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="#projetos">Projetos</a>
+            <a href="#stack">Stack</a>
             <a href="sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
         </nav>
-        <button id="darkModeBtn" style="margin-left:20px;padding:10px 18px;border-radius:6px;border:none;background:#222;color:#fff;font-weight:bold;cursor:pointer;">Modo Escuro</button>
     </header>
 
-    <section class="hero">
-        <h1>Bem-vindo ao meu Portfólio</h1>
-        <p>Desenvolvedor focado em Web e Inteligência Artificial</p>
-        <div class="social-buttons">
-            <a class="btn" href="https://www.linkedin.com/in/marcelo-andrade-da-fonseca-7006b737b/" target="_blank">LinkedIn</a>
-            <a class="btn" href="https://www.github.com/marcelof0nseca" target="_blank">GitHub</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Sobre mim · Desenvolvedor fullstack</p>
+                <h1>Eu desenvolvo sistemas completos, do front-end ao back-end.</h1>
+                <p class="hero-text">
+                    Sou Marcelo Andrade da Fonseca, estudante de Ciência da Computação e desenvolvedor fullstack.
+                    Crio aplicações web, plataformas SaaS, sistemas de gestão e jogos em C com foco em
+                    usabilidade, organização de dados e experiência visual bem resolvida.
+                </p>
+                <div class="hero-actions" aria-label="Links principais">
+                    <a class="button primary" href="#projetos">Explorar projetos</a>
+                    <a class="button secondary" href="contato.html">Falar comigo</a>
+                </div>
+            </div>
 
-    <section class="container">
-        <h2 class="section-title">Destaques</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Projeto 1</h3>
-                <p>Robô limpador de placas solares utilizando Arduino e automação para melhorar a eficiência energética.</p>
+            <div class="hero-visual about-visual" aria-label="Foto e resumo profissional de Marcelo Andrade da Fonseca">
+                <div class="portrait-frame">
+                    <img src="assets/marcelo-foto.jpeg" alt="Foto de Marcelo Andrade da Fonseca" />
+                </div>
+                <div class="about-summary">
+                    <span>Marcelo Andrade da Fonseca</span>
+                    <strong>Desenvolvedor Fullstack</strong>
+                    <p>Front-end, back-end, produto, sistemas web e jogos em C.</p>
+                </div>
+                <div class="skill-strip" aria-label="Principais habilidades">
+                    <span>APIs</span>
+                    <span>UI/UX</span>
+                    <span>Banco de dados</span>
+                    <span>SaaS</span>
+                </div>
             </div>
-            <div class="card">
-                <h3>Lista de Estudos</h3>
-                <ul>
-                    <li>HTML e CSS</li>
-                    <li>JavaScript</li>
-                    <li>Estruturas de Dados</li>
-                    <li>Introdução à IA</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Adocao-Plus</h3>
-                <p>Sistema CRUD completo em Python, usando arquivos .txt para armazenamento e controle de cuidados dos animais.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>© 2025 Marcelo - Portfólio</p>
-        <script>
-        document.getElementById('darkModeBtn').onclick = function() {
-            document.body.classList.toggle('dark-mode');
-        };
-        </script>
-        <script src="script.js"></script>
+        <section class="metrics-band" aria-label="Resumo profissional">
+            <div>
+                <strong>05+</strong>
+                <span>Projetos autorais</span>
+            </div>
+            <div>
+                <strong>Full</strong>
+                <span>Front-end, back-end e produto</span>
+            </div>
+            <div>
+                <strong>SaaS</strong>
+                <span>Gestão, métricas e operações</span>
+            </div>
+            <div>
+                <strong>C</strong>
+                <span>Jogo com Raylib e modularização</span>
+            </div>
+        </section>
+
+        <section class="section-shell" id="projetos">
+            <div class="section-heading">
+                <p class="eyebrow">Projetos selecionados</p>
+                <h2>Uma vitrine de produtos com problema, contexto e solução.</h2>
+            </div>
+
+            <div class="project-showcase">
+                <article class="case-card case-featured">
+                    <div class="case-media logo-media gymtrack-media">
+                        <img src="assets/gymtrack-logo.png" alt="Logo do projeto GymTrack" />
+                    </div>
+                    <div class="case-content">
+                        <div class="project-meta">
+                            <span>Fullstack</span>
+                            <span>Academia</span>
+                            <span>Gestão de treinos</span>
+                        </div>
+                        <h3>GymTrack</h3>
+                        <p>
+                            Sistema web para gerenciamento de treinos de academia, criado para auxiliar praticantes
+                            a organizarem, registrarem e acompanharem seus treinos de forma estruturada e eficiente.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-media logo-media nextgym-media">
+                        <img src="assets/nextgym-logo.jpeg" alt="Logo do projeto NextGym" />
+                    </div>
+                    <div class="case-content">
+                        <div class="project-meta">
+                            <span>Institucional</span>
+                            <span>Usabilidade</span>
+                        </div>
+                        <h3>NextGym</h3>
+                        <p>
+                            Site institucional e funcional de uma academia fictícia, com foco em usabilidade,
+                            prevenção de erros e feedback claro para planos, modalidades, horários e agendamento.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-media logo-media vigil-media">
+                        <img src="assets/vigil-logo.png" alt="Logo do projeto Vigil" />
+                    </div>
+                    <div class="case-content">
+                        <div class="project-meta">
+                            <span>SaaS</span>
+                            <span>Mobile-first</span>
+                            <span>Segurança</span>
+                        </div>
+                        <h3>Vigil</h3>
+                        <p>
+                            Plataforma de gestão de ocorrências para segurança privada, com fila operacional em tempo
+                            real por polling, mapa OpenStreetMap, histórico com timestamps e métricas básicas.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="case-card wide">
+                    <div class="case-media image-media">
+                        <img src="assets/caos-recife.png" alt="Arte do jogo Caos em Recife" />
+                    </div>
+                    <div class="case-content">
+                        <div class="project-meta">
+                            <span>C</span>
+                            <span>Raylib</span>
+                            <span>Game</span>
+                        </div>
+                        <h3>Caos em Recife</h3>
+                        <p>
+                            Jogo simples em C inspirado em Crossy Road. O objetivo é atravessar a rua desviando de
+                            carros e obstáculos até chegar ao topo do mapa, com arquivos separados por jogador,
+                            obstáculo, mapa e jogo para facilitar manutenção.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-media logo-media amare-media">
+                        <img src="assets/amare-logo.png" alt="Logo da Clínica AMARE" />
+                    </div>
+                    <div class="case-content">
+                        <div class="project-meta">
+                            <span>Healthtech</span>
+                            <span>UX</span>
+                            <span>Jornada</span>
+                        </div>
+                        <h3>Clínica AMARE</h3>
+                        <p>
+                            Sistema web para acompanhamento da jornada de fertilidade, pensado para apoiar pacientes
+                            e equipe médica com mais clareza, acolhimento e baixa carga cognitiva.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="split-section" id="stack">
+            <div class="section-heading compact">
+                <p class="eyebrow">Stack e direção</p>
+                <h2>Fullstack com olhar de produto.</h2>
+                <p>
+                    Meu foco é construir aplicações completas: interface bem resolvida, back-end organizado,
+                    dados consistentes, regras de negócio claras e uma experiência que faça sentido ponta a ponta.
+                </p>
+            </div>
+
+            <div class="stack-panel">
+                <div class="stack-item">
+                    <span>01</span>
+                    <strong>Front-end</strong>
+                    <p>HTML semântico, CSS responsivo, JavaScript, UI/UX, estados visuais e microinterações.</p>
+                </div>
+                <div class="stack-item">
+                    <span>02</span>
+                    <strong>Back-end</strong>
+                    <p>APIs, autenticação, validação de dados, regras de negócio, banco de dados e fluxos seguros.</p>
+                </div>
+                <div class="stack-item">
+                    <span>03</span>
+                    <strong>Arquitetura e dados</strong>
+                    <p>Modelagem, organização por módulos, integrações, histórico, métricas e evolução do sistema.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="section-heading">
+                <p class="eyebrow">Como eu construo</p>
+                <h2>Da ideia à entrega, com clareza de produto.</h2>
+            </div>
+            <div class="process-grid">
+                <div>
+                    <span>Mapear</span>
+                    <p>Entendo o problema, o público, as tarefas principais e os pontos onde o usuário pode errar.</p>
+                </div>
+                <div>
+                    <span>Desenhar</span>
+                    <p>Organizo hierarquia visual, fluxo, feedback, estados e responsividade antes de polir a UI.</p>
+                </div>
+                <div>
+                    <span>Implementar</span>
+                    <p>Transformo a solução em código, separando responsabilidades e deixando o projeto fácil de evoluir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <p class="eyebrow">Próximo passo</p>
+            <h2>Quer ver um projeto com estética forte e funcionamento bem pensado?</h2>
+            <div class="hero-actions">
+                <a class="button primary" href="mailto:marceloandradefonseca05@gmail.com">Enviar email</a>
+                <a class="button secondary" href="https://www.linkedin.com/in/marcelo-andrade-da-fonseca-7006b737b/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 Marcelo Andrade da Fonseca</span>
+        <div>
+            <a href="https://www.github.com/marcelof0nseca" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://wa.me/5581997188460" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

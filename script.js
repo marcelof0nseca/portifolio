@@ -1,24 +1,16 @@
-window.onload = function() {
-  const heroTitle = document.querySelector('.hero h1');
-  if (!heroTitle) return;
-  const hora = new Date().getHours();
-  let saudacao = '';
-  if (hora >= 5 && hora < 12) {
-    saudacao = 'Bom dia';
-  } else if (hora >= 12 && hora < 18) {
-    saudacao = 'Boa tarde';
-  } else {
-    saudacao = 'Boa noite';
-  }
-  const textoCompleto = `${saudacao}, bem-vindo ao meu Portfólio`;
-  heroTitle.textContent = '';
-  let i = 0;
-  function digitar() {
-    if (i < textoCompleto.length) {
-      heroTitle.textContent += textoCompleto.charAt(i);
-      i++;
-      setTimeout(digitar, 60); 
-    }
-  }
-  digitar();
-};
+const revealItems = document.querySelectorAll(".project-card, .case-card, .stack-item, .process-grid div, .content-panel");
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.16 });
+
+    revealItems.forEach((item) => observer.observe(item));
+} else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+}
